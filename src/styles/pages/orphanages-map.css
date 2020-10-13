@@ -1,0 +1,78 @@
+/* Main features of our page */
+#page-map {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;  /* Allow the better positioning of the side button */
+
+    display: flex;
+}
+
+/* Side bar */
+#page-map aside {
+    width: 440px;
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+    padding: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Title */
+#page-map aside h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 42px;
+    margin-top: 64px;
+}
+
+/* Slogan */
+#page-map aside p {
+    line-height: 28px;
+    margin-top: 24px;
+}
+
+/* Footer of the page */
+#page-map aside footer {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 24px;
+}
+
+/* City */
+#page-map aside footer strong {
+    font-weight: 800;
+}
+
+/* Button */
+#page-map .create-orphanage {
+    position: absolute;  /* Allows the better moving of the button */
+
+    right: 40px;
+    bottom: 40px;
+
+    z-index: 10;  /* Puts button over the map */
+
+    width: 64px;
+    height: 64px;
+    background: #15c3d6;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s;
+}
+
+/* Button hover animation */
+#page-map .create-orphanage:hover {
+    background: #17d6eb;
+}
+
+/* Map */
+#page-map .leaflet-container {
+    z-index: 5;  /* Puts map below the button */
+}
